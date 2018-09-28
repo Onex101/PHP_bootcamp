@@ -2,76 +2,308 @@
 	<title>mendeleiev periodic table</title>
 	<head>
 		<style>
-		
+			#hydrogen {
+				background-color: yellowgreen;
+			}
+			#noble_gas{
+				background-color: darkcyan;
+			}
+			#alkali_metal{
+				background-color: brown;
+			}
+			#alkali_e_metal{
+				background-color: darkviolet;
+			}
+			#trans_metal{
+				background-color: darkorange;
+			}
+			#rare_earth{
+				background-color: darkgoldenrod;
+			}
+			#rad_act_earth{
+				background-color: darkgreen;
+			}
+			#other_metal{
+				background-color: lightskyblue;
+			}
+			#semi_metal{
+				background-color: lightgreen;
+			}
+			#non_metal{
+				background-color: greenyellow;
+			}
+			#noble_gas{
+				background-color: turquoise;
+			}
 		</style>
 	</head>
 	<body>
 		<div class="wrapper">
-			<table style="width: 100%">
+			<table style="width: 100%" contenteditable="true">
 				<tr>
 					<td>
-						<div>
+						<div id="hydrogen" >
 							<p style="text-align: right">1</p>
 							<h3 style="text-align: center">H</h3>
-							<p style="text-align: left">1.008</p>
+							<p style="text-align: left">1</p>
 						</div>
 					</td>
 					<td colspan="16"></td>
 					<td>
-						<div>
+						<div id="noble_gas">
 							<p style="text-align: right">2</p>
 							<h3 style="text-align: center">He</h3>
-							<p style="text-align: left">4.003</p>
+							<p style="text-align: left">4</p>
 						</div>
 					</td>
 				</tr>
 				<tr>
 					<td>
-						<div>
-							<h3>Li</h3>
+						<div id="alkali_metal">
+							<p style="text-align: right">3</p>
+							<h3 style="text-align: center">Li</h3>
+							<p style="text-align: left">7</p>
 						</div>
 					</td>
-						<td>Be</td>
+					<td>
+						<div id="alkali_e_metal">
+							<p style="text-align: right">4</p>
+							<h3 style="text-align: center">Be</h3>
+							<p style="text-align: left">9</p>
+						</div>
+					</td>
+					<td colspan="10"></td>
+					<td>
+						<div id="semi_metal">
+							<p style="text-align: right">4</p>
+							<h3 style="text-align: center">B</h3>
+							<p style="text-align: left">9</p>
+						</div>
+					</td>
+					<td>
+						<div id="non_metal">
+							<p style="text-align: right">4</p>
+							<h3 style="text-align: center">C</h3>
+							<p style="text-align: left">9</p>
+						</div>
+					</td>
+					<td>
+						<div id="non_metal">
+							<p style="text-align: right">7</p>
+							<h3 style="text-align: center">N</h3>
+							<p style="text-align: left">14</p>
+						</div>
+					</td>
+						<td>
+							<div id="non_metal">
+								<p style="text-align: right">8</p>
+								<h3 style="text-align: center">O</h3>
+								<p style="text-align: left">16</p>
+							</div>
+						</td>
+						<td>
+							<div id="non_metal">
+								<p style="text-align: right">9</p>
+								<h3 style="text-align: center">F</h3>
+								<p style="text-align: left">19</p>
+							</div>
+						</td>
+						<td>
+							<div id="noble_gas">
+								<p style="text-align: right">7</p>
+								<h3 style="text-align: center">Ne</h3>
+								<p style="text-align: left">14</p>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<div id="alkali_metal">
+								<p style="text-align: right">11</p>
+								<h3 style="text-align: center">Na</h3>
+								<p style="text-align: left">23</p>
+							</div>
+						</td>
+						<td>
+							<div id="alkali_e_metal">
+								<p style="text-align: right">12</p>
+								<h3 style="text-align: center">Mg</h3>
+								<p style="text-align: left">24</p>
+							</div>
+						</td>
 						<td colspan="10"></td>
-						<td>B</td>
-						<td>C</td>
-						<td>N</td>
-						<td>O</td>
-						<td>F</td>
-						<td>Ne</td>
-				</tr>
-				<tr>
-						<td>Na</td>
-						<td>Mg</td>
-						<td colspan="10"></td>
-						<td>Al</td>
-						<td>Si</td>
-						<td>P</td>
-						<td>S</td>
-						<td>Cl</td>
-						<td>Ar</td>
-				</tr>
-				<tr>
-						<td>K</td>
-						<td>Ca</td>
-						<td>Sc</td>
-						<td>Ti</td>
-						<td>V</td>
-						<td>Cr</td>
-						<td>Mn</td>
-						<td>Fe</td>
-						<td>Co</td>
-						<td>Ni</td>
-						<td>Cu</td>
-						<td>Zn</td>
-						<td>Ga</td>
-						<td>Ge</td>
-						<td>As</td>
-						<td>Se</td>
-						<td>Br</td>
-						<td>Ki</td>
-				</tr>
-				<tr>
+						<td>
+							<div id="other_metal">
+								<p style="text-align: right">13</p>
+								<h3 style="text-align: center">Al</h3>
+								<p style="text-align: left">27</p>
+							</div>
+						</td>
+						<td>
+							<div id="semi_metal">
+								<p style="text-align: right">14</p>
+								<h3 style="text-align: center">Si</h3>
+								<p style="text-align: left">28</p>
+							</div>
+						</td>
+						<td>
+							<div id="non_metal">
+								<p style="text-align: right">15</p>
+								<h3 style="text-align: center">P</h3>
+								<p style="text-align: left">31</p>
+							</div>
+						</td>
+						<td>
+							<div id="non_metal">
+								<p style="text-align: right">16</p>
+								<h3 style="text-align: center">S</h3>
+								<p style="text-align: left">32</p>
+							</div>
+						</td>
+						<td>
+							<div id="non_metal">
+								<p style="text-align: right">17</p>
+								<h3 style="text-align: center">Cl</h3>
+								<p style="text-align: left">35</p>
+							</div>
+						</td>
+						<td>
+							<div id="noble_gas">
+								<p style="text-align: right">18</p>
+								<h3 style="text-align: center">Ar</h3>
+								<p style="text-align: left">40</p>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<div id="alkali_metal">
+								<p style="text-align: right">19</p>
+								<h3 style="text-align: center">K</h3>
+								<p style="text-align: left">39</p>
+							</div>
+						</td>
+						<td>
+							<div id="alkali_e_metal">
+								<p style="text-align: right">20</p>
+								<h3 style="text-align: center">Ca</h3>
+								<p style="text-align: left">40</p>
+							</div>
+						</td>
+						<td>
+							<div id="trans_metal">
+								<p style="text-align: right">21</p>
+								<h3 style="text-align: center">Sc</h3>
+								<p style="text-align: left">45</p>
+							</div>
+						</td>
+						<td>
+							<div id="trans_metal">
+								<p style="text-align: right">22</p>
+								<h3 style="text-align: center">Ti</h3>
+								<p style="text-align: left">48</p>
+							</div>
+						</td>
+						<td>
+							<div id="trans_metal">
+								<p style="text-align: right">23</p>
+								<h3 style="text-align: center">V</h3>
+								<p style="text-align: left">51</p>
+							</div>
+						</td>
+						<td>
+							<div id="trans_metal">
+								<p style="text-align: right">24</p>
+								<h3 style="text-align: center">Cr</h3>
+								<p style="text-align: left">52</p>
+							</div>
+						</td>
+						<td>
+							<div id="trans_metal">
+								<p style="text-align: right">25</p>
+								<h3 style="text-align: center">Mn</h3>
+								<p style="text-align: left">55</p>
+							</div>
+						</td>
+						<td>
+							<div id="trans_metal">
+								<p style="text-align: right">26</p>
+								<h3 style="text-align: center">Fe</h3>
+								<p style="text-align: left">27</p>
+							</div>
+						</td>
+						<td>
+							<div id="trans_metal">
+								<p style="text-align: right">27</p>
+								<h3 style="text-align: center">Co</h3>
+								<p style="text-align: left">59</p>
+							</div>
+						</td>
+						<td>
+							<div id="trans_metal">
+								<p style="text-align: right">28</p>
+								<h3 style="text-align: center">Ni</h3>
+								<p style="text-align: left">58</p>
+							</div>
+						</td>
+						<td>
+							<div id="trans_metal">
+								<p style="text-align: right">29</p>
+								<h3 style="text-align: center">Cu</h3>
+								<p style="text-align: left">63</p>
+							</div>
+						</td>
+						<td>
+							<div id="trans_metal">
+								<p style="text-align: right">30</p>
+								<h3 style="text-align: center">Zn</h3>
+								<p style="text-align: left">64</p>
+							</div>
+						</td>
+						<td>
+							<div id="other_metal">
+								<p style="text-align: right">31</p>
+								<h3 style="text-align: center">Ga</h3>
+								<p style="text-align: left">69</p>
+							</div>
+						</td>
+						<td>
+							<div id="semi_metal">
+								<p style="text-align: right">32</p>
+								<h3 style="text-align: center">Ge</h3>
+								<p style="text-align: left">74</p>
+							</div>
+						</td>
+						<td>
+							<div id="semi_metal">
+								<p style="text-align: right">33</p>
+								<h3 style="text-align: center">As</h3>
+								<p style="text-align: left">75</p>
+							</div>
+						</td>
+						<td>
+							<div id="semi_metal">
+								<p style="text-align: right">34</p>
+								<h3 style="text-align: center">Se</h3>
+								<p style="text-align: left">80</p>
+							</div>
+						</td>
+						<td>
+							<div id="semi_metal">
+								<p style="text-align: right">35</p>
+								<h3 style="text-align: center">Br</h3>
+								<p style="text-align: left">79</p>
+							</div>
+						</td>
+						<td>
+							<div id="semi_metal">
+								<p style="text-align: right">36</p>
+								<h3 style="text-align: center">Kr</h3>
+								<p style="text-align: left">84</p>
+							</div>
+						</td>
+					</tr>
+					<tr>
 						<td>Rb</td>
 						<td>Sr</td>
 						<td>Y</td>
@@ -90,8 +322,8 @@
 						<td>Te</td>
 						<td>I</td>
 						<td>Xe</td>
-				</tr>
-				<tr>
+					</tr>
+					<tr>
 						<td>Cs</td>
 						<td>Ba</td>
 						<td>La</td>
@@ -110,8 +342,8 @@
 						<td>Po</td>
 						<td>At</td>
 						<td>Rn</td>
-				</tr>
-				<tr>
+					</tr>
+					<tr>
 						<td>Fr</td>
 						<td>Ra</td>
 						<td>Ac</td>
@@ -130,8 +362,8 @@
 						<td>Lv</td>
 						<td>Ts</td>
 						<td>Og</td>
-				</tr>
-				<tr>
+					</tr>
+					<tr>
 						<td colspan="3"></td>
 						<td>Ce</td>
 						<td>Pr</td>
@@ -148,8 +380,8 @@
 						<td>Yb</td>
 						<td>Lu</td>
 						<td colspan="1"></td>
-				</tr>
-				<tr>
+					</tr>
+					<tr>
 						<td colspan="3"></td>
 						<td>Th</td>
 						<td>Pa</td>
@@ -166,7 +398,7 @@
 						<td>No</td>
 						<td>Lr</td>
 						<td colspan="1"></td>
-				</tr>
+					</tr>
 			</table>
 		</div>
 	</body>
