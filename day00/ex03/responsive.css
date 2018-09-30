@@ -1,0 +1,49 @@
+body{
+	background-image: url('https://banner2.kisspng.com/20180425/wtq/kisspng-dmitri-mendeleev-scientist-dimitri-mendeleev-chemi-floating-elements-5ae057c1d58262.9283945415246519698745.jpg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center; 
+}
+td {
+	flex: auto;
+	width: 5.55555%
+}
+p{
+	font-size: 1vw;
+}
+h3{
+	font-size: 1vw;
+}
+div.hydrogen {
+	background-color: yellowgreen;
+}
+div.noble_gas{
+	background-color: darkcyan;
+}
+div.alkali_metal{
+	background-color: brown;
+}
+div.alkali_e_metal{
+	background-color: darkviolet;
+}
+div.trans_metal{
+	background-color: darkorange;
+}
+div.lanthanide{
+	background-color: darkgoldenrod;
+}
+div.actinide{
+	background-color: darkgreen;
+}
+div.other_metal{
+	background-color: lightskyblue;
+}
+div.semi_metal{
+	background-color: lightgreen;
+}
+div.non_metal{
+	background-color: greenyellow;
+}
+div.div.noble_gas{
+	background-color: turquoise;
+}

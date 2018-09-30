@@ -1,54 +1,15 @@
 <html>
 	<title>mendeleiev periodic table</title>
 	<head>
-		<style>
-			body{
-				background-image: url('https://banner2.kisspng.com/20180425/wtq/kisspng-dmitri-mendeleev-scientist-dimitri-mendeleev-chemi-floating-elements-5ae057c1d58262.9283945415246519698745.jpg');
-				background-repeat: no-repeat;
-				background-attachment: fixed;
-				background-position: center; 
-			}
-			#hydrogen {
-				background-color: yellowgreen;
-			}
-			#noble_gas{
-				background-color: darkcyan;
-			}
-			#alkali_metal{
-				background-color: brown;
-			}
-			#alkali_e_metal{
-				background-color: darkviolet;
-			}
-			#trans_metal{
-				background-color: darkorange;
-			}
-			#lanthanide{
-				background-color: darkgoldenrod;
-			}
-			#actinide{
-				background-color: darkgreen;
-			}
-			#other_metal{
-				background-color: lightskyblue;
-			}
-			#semi_metal{
-				background-color: lightgreen;
-			}
-			#non_metal{
-				background-color: greenyellow;
-			}
-			#noble_gas{
-				background-color: turquoise;
-			}
-		</style>
+		<meta name="viewport" content="initial-scale=1">
+		<link rel="stylesheet" href="responsive.css">
 	</head>
 	<body>
 		<div class="wrapper">
-			<table style="width: 100%" contenteditable="true">
+			<table style="width: 100%">
 				<tr>
 					<td>
-						<div id="hydrogen" >
+						<div class="hydrogen" >
 							<p style="text-align: right">1</p>
 							<h3 style="text-align: center">H</h3>
 							<p style="text-align: left">1</p>
@@ -56,7 +17,7 @@
 					</td>
 					<td colspan="16"></td>
 					<td>
-						<div id="noble_gas">
+						<div class="noble_gas">
 							<p style="text-align: right">2</p>
 							<h3 style="text-align: center">He</h3>
 							<p style="text-align: left">4</p>
@@ -65,14 +26,14 @@
 				</tr>
 				<tr>
 					<td>
-						<div id="alkali_metal">
+						<div class="alkali_metal">
 							<p style="text-align: right">3</p>
 							<h3 style="text-align: center">Li</h3>
 							<p style="text-align: left">7</p>
 						</div>
 					</td>
 					<td>
-						<div id="alkali_e_metal">
+						<div class="alkali_e_metal">
 							<p style="text-align: right">4</p>
 							<h3 style="text-align: center">Be</h3>
 							<p style="text-align: left">9</p>
@@ -80,42 +41,42 @@
 					</td>
 					<td colspan="10"></td>
 					<td>
-						<div id="semi_metal">
+						<div class="semi_metal">
 							<p style="text-align: right">4</p>
 							<h3 style="text-align: center">B</h3>
 							<p style="text-align: left">9</p>
 						</div>
 					</td>
 					<td>
-						<div id="non_metal">
+						<div class="non_metal">
 							<p style="text-align: right">4</p>
 							<h3 style="text-align: center">C</h3>
 							<p style="text-align: left">9</p>
 						</div>
 					</td>
 					<td>
-						<div id="non_metal">
+						<div class="non_metal">
 							<p style="text-align: right">7</p>
 							<h3 style="text-align: center">N</h3>
 							<p style="text-align: left">14</p>
 						</div>
 					</td>
 						<td>
-							<div id="non_metal">
+							<div class="non_metal">
 								<p style="text-align: right">8</p>
 								<h3 style="text-align: center">O</h3>
 								<p style="text-align: left">16</p>
 							</div>
 						</td>
 						<td>
-							<div id="non_metal">
+							<div class="non_metal">
 								<p style="text-align: right">9</p>
 								<h3 style="text-align: center">F</h3>
 								<p style="text-align: left">19</p>
 							</div>
 						</td>
 						<td>
-							<div id="noble_gas">
+							<div class="noble_gas">
 								<p style="text-align: right">7</p>
 								<h3 style="text-align: center">Ne</h3>
 								<p style="text-align: left">14</p>
@@ -124,14 +85,14 @@
 					</tr>
 					<tr>
 						<td>
-							<div id="alkali_metal">
+							<div class="alkali_metal">
 								<p style="text-align: right">11</p>
 								<h3 style="text-align: center">Na</h3>
 								<p style="text-align: left">23</p>
 							</div>
 						</td>
 						<td>
-							<div id="alkali_e_metal">
+							<div class="alkali_e_metal">
 								<p style="text-align: right">12</p>
 								<h3 style="text-align: center">Mg</h3>
 								<p style="text-align: left">24</p>
@@ -139,42 +100,42 @@
 						</td>
 						<td colspan="10"></td>
 						<td>
-							<div id="other_metal">
+							<div class="other_metal">
 								<p style="text-align: right">13</p>
 								<h3 style="text-align: center">Al</h3>
 								<p style="text-align: left">27</p>
 							</div>
 						</td>
 						<td>
-							<div id="semi_metal">
+							<div class="semi_metal">
 								<p style="text-align: right">14</p>
 								<h3 style="text-align: center">Si</h3>
 								<p style="text-align: left">28</p>
 							</div>
 						</td>
 						<td>
-							<div id="non_metal">
+							<div class="non_metal">
 								<p style="text-align: right">15</p>
 								<h3 style="text-align: center">P</h3>
 								<p style="text-align: left">31</p>
 							</div>
 						</td>
 						<td>
-							<div id="non_metal">
+							<div class="non_metal">
 								<p style="text-align: right">16</p>
 								<h3 style="text-align: center">S</h3>
 								<p style="text-align: left">32</p>
 							</div>
 						</td>
 						<td>
-							<div id="non_metal">
+							<div class="non_metal">
 								<p style="text-align: right">17</p>
 								<h3 style="text-align: center">Cl</h3>
 								<p style="text-align: left">35</p>
 							</div>
 						</td>
 						<td>
-							<div id="noble_gas">
+							<div class="noble_gas">
 								<p style="text-align: right">18</p>
 								<h3 style="text-align: center">Ar</h3>
 								<p style="text-align: left">40</p>
@@ -183,126 +144,126 @@
 					</tr>
 					<tr>
 						<td>
-							<div id="alkali_metal">
+							<div class="alkali_metal">
 								<p style="text-align: right">19</p>
 								<h3 style="text-align: center">K</h3>
 								<p style="text-align: left">39</p>
 							</div>
 						</td>
 						<td>
-							<div id="alkali_e_metal">
+							<div class="alkali_e_metal">
 								<p style="text-align: right">20</p>
 								<h3 style="text-align: center">Ca</h3>
 								<p style="text-align: left">40</p>
 							</div>
 						</td>
 						<td>
-							<div id="trans_metal">
+							<div class="trans_metal">
 								<p style="text-align: right">21</p>
 								<h3 style="text-align: center">Sc</h3>
 								<p style="text-align: left">45</p>
 							</div>
 						</td>
 						<td>
-							<div id="trans_metal">
+							<div class="trans_metal">
 								<p style="text-align: right">22</p>
 								<h3 style="text-align: center">Ti</h3>
 								<p style="text-align: left">48</p>
 							</div>
 						</td>
 						<td>
-							<div id="trans_metal">
+							<div class="trans_metal">
 								<p style="text-align: right">23</p>
 								<h3 style="text-align: center">V</h3>
 								<p style="text-align: left">51</p>
 							</div>
 						</td>
 						<td>
-							<div id="trans_metal">
+							<div class="trans_metal">
 								<p style="text-align: right">24</p>
 								<h3 style="text-align: center">Cr</h3>
 								<p style="text-align: left">52</p>
 							</div>
 						</td>
 						<td>
-							<div id="trans_metal">
+							<div class="trans_metal">
 								<p style="text-align: right">25</p>
 								<h3 style="text-align: center">Mn</h3>
 								<p style="text-align: left">55</p>
 							</div>
 						</td>
 						<td>
-							<div id="trans_metal">
+							<div class="trans_metal">
 								<p style="text-align: right">26</p>
 								<h3 style="text-align: center">Fe</h3>
 								<p style="text-align: left">27</p>
 							</div>
 						</td>
 						<td>
-							<div id="trans_metal">
+							<div class="trans_metal">
 								<p style="text-align: right">27</p>
 								<h3 style="text-align: center">Co</h3>
 								<p style="text-align: left">59</p>
 							</div>
 						</td>
 						<td>
-							<div id="trans_metal">
+							<div class="trans_metal">
 								<p style="text-align: right">28</p>
 								<h3 style="text-align: center">Ni</h3>
 								<p style="text-align: left">58</p>
 							</div>
 						</td>
 						<td>
-							<div id="trans_metal">
+							<div class="trans_metal">
 								<p style="text-align: right">29</p>
 								<h3 style="text-align: center">Cu</h3>
 								<p style="text-align: left">63</p>
 							</div>
 						</td>
 						<td>
-							<div id="trans_metal">
+							<div class="trans_metal">
 								<p style="text-align: right">30</p>
 								<h3 style="text-align: center">Zn</h3>
 								<p style="text-align: left">64</p>
 							</div>
 						</td>
 						<td>
-							<div id="other_metal">
+							<div class="other_metal">
 								<p style="text-align: right">31</p>
 								<h3 style="text-align: center">Ga</h3>
 								<p style="text-align: left">69</p>
 							</div>
 						</td>
 						<td>
-							<div id="semi_metal">
+							<div class="semi_metal">
 								<p style="text-align: right">32</p>
 								<h3 style="text-align: center">Ge</h3>
 								<p style="text-align: left">74</p>
 							</div>
 						</td>
 						<td>
-							<div id="semi_metal">
+							<div class="semi_metal">
 								<p style="text-align: right">33</p>
 								<h3 style="text-align: center">As</h3>
 								<p style="text-align: left">75</p>
 							</div>
 						</td>
 						<td>
-							<div id="non_metal">
+							<div class="non_metal">
 								<p style="text-align: right">34</p>
 								<h3 style="text-align: center">Se</h3>
 								<p style="text-align: left">80</p>
 							</div>
 						</td>
 						<td>
-							<div id="non_metal">
+							<div class="non_metal">
 								<p style="text-align: right">35</p>
 								<h3 style="text-align: center">Br</h3>
 								<p style="text-align: left">79</p>
 							</div>
 						</td>
 						<td>
-							<div id="noble_gas">
+							<div class="noble_gas">
 								<p style="text-align: right">36</p>
 								<h3 style="text-align: center">Kr</h3>
 								<p style="text-align: left">84</p>
@@ -311,126 +272,126 @@
 					</tr>
 					<tr>
 						<td>
-							<div id="alkali_metal">
+							<div class="alkali_metal">
 								<p style="text-align: right">37</p>
 								<h3 style="text-align: center">Rb</h3>
 								<p style="text-align: left">85</p>
 							</div>
 						</td>
 						<td>
-							<div id="alkali_e_metal">
+							<div class="alkali_e_metal">
 								<p style="text-align: right">38</p>
 								<h3 style="text-align: center">Sr</h3>
 								<p style="text-align: left">88</p>
 							</div>
 						</td>
 						<td>
-							<div id="trans_metal">
+							<div class="trans_metal">
 								<p style="text-align: right">39</p>
 								<h3 style="text-align: center">Y</h3>
 								<p style="text-align: left">89</p>
 							</div>
 						</td>
 						<td>
-							<div id="trans_metal">
+							<div class="trans_metal">
 								<p style="text-align: right">40</p>
 								<h3 style="text-align: center">Zr</h3>
 								<p style="text-align: left">90</p>
 							</div>
 						</td>
 						<td>
-							<div id="trans_metal">
+							<div class="trans_metal">
 								<p style="text-align: right">41</p>
 								<h3 style="text-align: center">Nb</h3>
 								<p style="text-align: left">93</p>
 							</div>
 						</td>
 						<td>
-							<div id="trans_metal">
+							<div class="trans_metal">
 								<p style="text-align: right">42</p>
 								<h3 style="text-align: center">Mo</h3>
 								<p style="text-align: left">98</p>
 							</div>
 						</td>
 						<td>
-							<div id="trans_metal">
+							<div class="trans_metal">
 								<p style="text-align: right">43</p>
 								<h3 style="text-align: center">Tc</h3>
 								<p style="text-align: left">97</p>
 							</div>
 						</td>
 						<td>
-							<div id="trans_metal">
+							<div class="trans_metal">
 								<p style="text-align: right">44</p>
 								<h3 style="text-align: center">Ru</h3>
 								<p style="text-align: left">102</p>
 							</div>
 						</td>
 						<td>
-							<div id="trans_metal">
+							<div class="trans_metal">
 								<p style="text-align: right">45</p>
 								<h3 style="text-align: center">Rh</h3>
 								<p style="text-align: left">103</p>
 							</div>
 						</td>
 						<td>
-							<div id="trans_metal">
+							<div class="trans_metal">
 								<p style="text-align: right">46</p>
 								<h3 style="text-align: center">Pd</h3>
 								<p style="text-align: left">106</p>
 							</div>
 						</td>
 						<td>
-							<div id="trans_metal">
+							<div class="trans_metal">
 								<p style="text-align: right">47</p>
 								<h3 style="text-align: center">Ag</h3>
 								<p style="text-align: left">107</p>
 							</div>
 						</td>
 						<td>
-							<div id="trans_metal">
+							<div class="trans_metal">
 								<p style="text-align: right">48</p>
 								<h3 style="text-align: center">Cd</h3>
 								<p style="text-align: left">114</p>
 							</div>
 						</td>
 						<td>
-							<div id="other_metal">
+							<div class="other_metal">
 								<p style="text-align: right">49</p>
 								<h3 style="text-align: center">In</h3>
 								<p style="text-align: left">115</p>
 							</div>
 						</td>
 						<td>
-							<div id="other_metal">
+							<div class="other_metal">
 								<p style="text-align: right">50</p>
 								<h3 style="text-align: center">Sn</h3>
 								<p style="text-align: left">120</p>
 							</div>
 						</td>
 						<td>
-							<div id="semi_metal">
+							<div class="semi_metal">
 								<p style="text-align: right">51</p>
 								<h3 style="text-align: center">Sb</h3>
 								<p style="text-align: left">121</p>
 							</div>
 						</td>
 						<td>
-							<div id="semi_metal">
+							<div class="semi_metal">
 								<p style="text-align: right">52</p>
 								<h3 style="text-align: center">Te</h3>
 								<p style="text-align: left">130</p>
 							</div>
 						</td>
 						<td>
-							<div id="non_metal">
+							<div class="non_metal">
 								<p style="text-align: right">53</p>
 								<h3 style="text-align: center">I</h3>
 								<p style="text-align: left">127</p>
 							</div>
 						</td>
 						<td>
-							<div id="noble_gas">
+							<div class="noble_gas">
 								<p style="text-align: right">54</p>
 								<h3 style="text-align: center">Xe</h3>
 								<p style="text-align: left">132</p>
@@ -439,126 +400,126 @@
 					</tr>
 					<tr>
 						<td>
-							<div id="alkali_metal">
+							<div class="alkali_metal">
 								<p style="text-align: right">55</p>
 								<h3 style="text-align: center">Cs</h3>
 								<p style="text-align: left">132</p>
 							</div>
 						</td>
 						<td>
-							<div id="alkali_e_metal">
+							<div class="alkali_e_metal">
 								<p style="text-align: right">56</p>
 								<h3 style="text-align: center">Ba</h3>
 								<p style="text-align: left">137</p>
 							</div>
 						</td>
 						<td>
-							<div id="lanthanide">
+							<div class="lanthanide">
 								<p style="text-align: right">57-71</p>
 								<h3 style="text-align: center">Lan</h3>
 								<p style="text-align: left">**</p>
 							</div>
 						</td>
 						<td>
-							<div id="trans_metal">
+							<div class="trans_metal">
 								<p style="text-align: right">72</p>
 								<h3 style="text-align: center">Hf</h3>
 								<p style="text-align: left">179</p>
 							</div>
 						</td>
 						<td>
-							<div id="trans_metal">
+							<div class="trans_metal">
 								<p style="text-align: right">73</p>
 								<h3 style="text-align: center">Ta</h3>
 								<p style="text-align: left">181</p>
 							</div>
 						</td>
 						<td>
-							<div id="trans_metal">
+							<div class="trans_metal">
 								<p style="text-align: right">74</p>
 								<h3 style="text-align: center">W</h3>
 								<p style="text-align: left">184</p>
 							</div>
 						</td>
 						<td>
-							<div id="trans_metal">
+							<div class="trans_metal">
 								<p style="text-align: right">75</p>
 								<h3 style="text-align: center">Re</h3>
 								<p style="text-align: left">186</p>
 							</div>
 						</td>
 						<td>
-							<div id="trans_metal">
+							<div class="trans_metal">
 								<p style="text-align: right">76</p>
 								<h3 style="text-align: center">Os</h3>
 								<p style="text-align: left">190</p>
 							</div>
 						</td>
 						<td>
-							<div id="trans_metal">
+							<div class="trans_metal">
 								<p style="text-align: right">77</p>
 								<h3 style="text-align: center">Ir</h3>
 								<p style="text-align: left">192</p>
 							</div>
 						</td>
 						<td>
-							<div id="trans_metal">
+							<div class="trans_metal">
 								<p style="text-align: right">78</p>
 								<h3 style="text-align: center">Pt</h3>
 								<p style="text-align: left">195</p>
 							</div>
 						</td>
 						<td>
-							<div id="trans_metal">
+							<div class="trans_metal">
 								<p style="text-align: right">79</p>
 								<h3 style="text-align: center">Au</h3>
 								<p style="text-align: left">197</p>
 							</div>
 						</td>
 						<td>
-							<div id="trans_metal">
+							<div class="trans_metal">
 								<p style="text-align: right">80</p>
 								<h3 style="text-align: center">Hg</h3>
 								<p style="text-align: left">201</p>
 							</div>
 						</td>
 						<td>
-							<div id="other_metal">
+							<div class="other_metal">
 								<p style="text-align: right">81</p>
 								<h3 style="text-align: center">Ti</h3>
 								<p style="text-align: left">204</p>
 							</div>
 						</td>
 						<td>
-							<div id="other_metal">
+							<div class="other_metal">
 								<p style="text-align: right">82</p>
 								<h3 style="text-align: center">Pb</h3>
 								<p style="text-align: left">207</p>
 							</div>
 						</td>
 						<td>
-							<div id="other_metal">
+							<div class="other_metal">
 								<p style="text-align: right">83</p>
 								<h3 style="text-align: center">Bi</h3>
 								<p style="text-align: left">209</p>
 							</div>
 						</td>
 						<td>
-							<div id="semi_metal">
+							<div class="semi_metal">
 								<p style="text-align: right">84</p>
 								<h3 style="text-align: center">Po</h3>
 								<p style="text-align: left">209</p>
 							</div>
 						</td>
 						<td>
-							<div id="non_metal">
+							<div class="non_metal">
 								<p style="text-align: right">85</p>
 								<h3 style="text-align: center">At</h3>
 								<p style="text-align: left">210</p>
 							</div>
 						</td>
 						<td>
-							<div id="noble_gas">
+							<div class="noble_gas">
 								<p style="text-align: right">86</p>
 								<h3 style="text-align: center">Rn</h3>
 								<p style="text-align: left">222</p>
@@ -567,126 +528,126 @@
 					</tr>
 					<tr>
 						<td>
-							<div id="alkali_metal">
+							<div class="alkali_metal">
 								<p style="text-align: right">87</p>
 								<h3 style="text-align: center">Fr</h3>
 								<p style="text-align: left">223</p>
 							</div>
 						</td>
 						<td>
-							<div id="alkali_e_metal">
+							<div class="alkali_e_metal">
 								<p style="text-align: right">88</p>
 								<h3 style="text-align: center">Ra</h3>
 								<p style="text-align: left">226</p>
 							</div>
 						</td>
 						<td>
-							<div id="alkali_metal">
+							<div class="actinide">
 								<p style="text-align: right">89-103</p>
 								<h3 style="text-align: center">Act</h3>
 								<p style="text-align: left">**</p>
 							</div>
 						</td>
 						<td>
-							<div id="trans_metal">
+							<div class="trans_metal">
 								<p style="text-align: right">104</p>
 								<h3 style="text-align: center">Rf</h3>
 								<p style="text-align: left">261</p>
 							</div>
 						</td>
 						<td>
-							<div id="trans_metal">
+							<div class="trans_metal">
 								<p style="text-align: right">105</p>
 								<h3 style="text-align: center">Db</h3>
 								<p style="text-align: left">262</p>
 							</div>
 						</td>
 						<td>
-							<div id="trans_metal">
+							<div class="trans_metal">
 								<p style="text-align: right">106</p>
 								<h3 style="text-align: center">Sg</h3>
 								<p style="text-align: left">266</p>
 							</div>
 						</td>
 						<td>
-							<div id="trans_metal">
+							<div class="trans_metal">
 								<p style="text-align: right">107</p>
 								<h3 style="text-align: center">Bh</h3>
 								<p style="text-align: left">264</p>
 							</div>
 						</td>
 						<td>
-							<div id="trans_metal">
+							<div class="trans_metal">
 								<p style="text-align: right">108</p>
 								<h3 style="text-align: center">Hs</h3>
 								<p style="text-align: left">269</p>
 							</div>
 						</td>
 						<td>
-							<div id="trans_metal">
+							<div class="trans_metal">
 								<p style="text-align: right">109</p>
 								<h3 style="text-align: center">Mt</h3>
 								<p style="text-align: left">278</p>
 							</div>
 						</td>
 						<td>
-							<div id="trans_metal">
+							<div class="trans_metal">
 								<p style="text-align: right">110</p>
 								<h3 style="text-align: center">Ds</h3>
 								<p style="text-align: left">281</p>
 							</div>
 						</td>
 						<td>
-							<div id="trans_metal">
+							<div class="trans_metal">
 								<p style="text-align: right">111</p>
 								<h3 style="text-align: center">Rg</h3>
 								<p style="text-align: left">280</p>
 							</div>
 						</td>
 						<td>
-							<div id="trans_metal">
+							<div class="trans_metal">
 								<p style="text-align: right">112</p>
 								<h3 style="text-align: center">Cn</h3>
 								<p style="text-align: left">285</p>
 							</div>
 						</td>
 						<td>
-							<div id="other_metal">
+							<div class="other_metal">
 								<p style="text-align: right">113</p>
 								<h3 style="text-align: center">Nh</h3>
 								<p style="text-align: left">286</p>
 							</div>
 						</td>
 						<td>
-							<div id="other_metal">
+							<div class="other_metal">
 								<p style="text-align: right">114</p>
 								<h3 style="text-align: center">Fl</h3>
 								<p style="text-align: left">289</p>
 							</div>
 						</td>
 						<td>
-							<div id="other_metal">
+							<div class="other_metal">
 								<p style="text-align: right">115</p>
 								<h3 style="text-align: center">Mc</h3>
 								<p style="text-align: left">289</p>
 							</div>
 						</td>
 						<td>
-							<div id="other_metal">
+							<div class="other_metal">
 								<p style="text-align: right">116</p>
 								<h3 style="text-align: center">Lv</h3>
 								<p style="text-align: left">293</p>
 							</div>
 						</td>
 						<td>
-							<div id="non_metal">
+							<div class="non_metal">
 								<p style="text-align: right">117</p>
 								<h3 style="text-align: center">Ts</h3>
 								<p style="text-align: left">294</p>
 							</div>
 						</td>
 						<td>
-						<div id="noble_gas">
+						<div class="noble_gas">
 								<p style="text-align: right">118</p>
 								<h3 style="text-align: center">Og</h3>
 								<p style="text-align: left">294</p>
@@ -696,105 +657,105 @@
 					<tr>
 						<td colspan="3"></td>
 						<td>
-							<div id="lanthanide">
+							<div class="lanthanide">
 								<p style="text-align: right">57</p>
 								<h3 style="text-align: center">La</h3>
 								<p style="text-align: left">139</p>
 							</div>
 						</td>
 						<td>
-							<div id="lanthanide">
+							<div class="lanthanide">
 								<p style="text-align: right">57</p>
 								<h3 style="text-align: center">Ce</h3>
 								<p style="text-align: left">139</p>
 							</div>
 						</td>
 						<td>
-							<div id="lanthanide">
+							<div class="lanthanide">
 								<p style="text-align: right">57</p>
 								<h3 style="text-align: center">Pr</h3>
 								<p style="text-align: left">139</p>
 							</div>
 						</td>
 						<td>
-							<div id="lanthanide">
+							<div class="lanthanide">
 								<p style="text-align: right">57</p>
 								<h3 style="text-align: center">Nd</h3>
 								<p style="text-align: left">139</p>
 							</div>
 						</td>
 						<td>
-							<div id="lanthanide">
+							<div class="lanthanide">
 								<p style="text-align: right">57</p>
 								<h3 style="text-align: center">Pm</h3>
 								<p style="text-align: left">139</p>
 							</div>
 						</td>
 						<td>
-							<div id="lanthanide">
+							<div class="lanthanide">
 								<p style="text-align: right">57</p>
 								<h3 style="text-align: center">Sm</h3>
 								<p style="text-align: left">139</p>
 							</div>
 						</td>
 						<td>
-							<div id="lanthanide">
+							<div class="lanthanide">
 								<p style="text-align: right">57</p>
 								<h3 style="text-align: center">Eu</h3>
 								<p style="text-align: left">139</p>
 							</div>
 						</td>
 						<td>
-							<div id="lanthanide">
+							<div class="lanthanide">
 								<p style="text-align: right">57</p>
 								<h3 style="text-align: center">Gd</h3>
 								<p style="text-align: left">139</p>
 							</div>
 						</td>
 						<td>
-							<div id="lanthanide">
+							<div class="lanthanide">
 								<p style="text-align: right">57</p>
 								<h3 style="text-align: center">Tb</h3>
 								<p style="text-align: left">139</p>
 							</div>
 						</td>
 						<td>
-							<div id="lanthanide">
+							<div class="lanthanide">
 								<p style="text-align: right">57</p>
 								<h3 style="text-align: center">Dy</h3>
 								<p style="text-align: left">139</p>
 							</div>
 						</td>
 						<td>
-							<div id="lanthanide">
+							<div class="lanthanide">
 								<p style="text-align: right">57</p>
 								<h3 style="text-align: center">Ho</h3>
 								<p style="text-align: left">139</p>
 							</div>
 						</td>
 						<td>
-							<div id="lanthanide">
+							<div class="lanthanide">
 								<p style="text-align: right">57</p>
 								<h3 style="text-align: center">Er</h3>
 								<p style="text-align: left">139</p>
 							</div>
 						</td>
 						<td>
-							<div id="lanthanide">
+							<div class="lanthanide">
 								<p style="text-align: right">57</p>
 								<h3 style="text-align: center">Tm</h3>
 								<p style="text-align: left">139</p>
 							</div>
 						</td>
 						<td>
-							<div id="lanthanide">
+							<div class="lanthanide">
 								<p style="text-align: right">57</p>
 								<h3 style="text-align: center">Yb</h3>
 								<p style="text-align: left">139</p>
 							</div>
 						</td>
 						<td>
-							<div id="lanthanide">
+							<div class="lanthanide">
 								<p style="text-align: right">57</p>
 								<h3 style="text-align: center">Lu</h3>
 								<p style="text-align: left">139</p>
@@ -804,105 +765,105 @@
 					<tr>
 						<td colspan="3"></td>
 						<td>
-							<div id="actinide">
+							<div class="actinide">
 								<p style="text-align: right">89</p>
 								<h3 style="text-align: center">Ac</h3>
 								<p style="text-align: left">227</p>
 							</div>
 						</td>
 						<td>
-							<div id="actinide">
+							<div class="actinide">
 								<p style="text-align: right">89</p>
 								<h3 style="text-align: center">Th</h3>
 								<p style="text-align: left">227</p>
 							</div>
 						</td>
 						<td>
-							<div id="actinide">
+							<div class="actinide">
 								<p style="text-align: right">89</p>
 								<h3 style="text-align: center">Pa</h3>
 								<p style="text-align: left">227</p>
 							</div>
 						</td>
 						<td>
-							<div id="actinide">
+							<div class="actinide">
 								<p style="text-align: right">89</p>
 								<h3 style="text-align: center">U</h3>
 								<p style="text-align: left">227</p>
 							</div>
 						</td>
 						<td>
-							<div id="actinide">
+							<div class="actinide">
 								<p style="text-align: right">89</p>
 								<h3 style="text-align: center">Np</h3>
 								<p style="text-align: left">227</p>
 							</div>
 						</td>
 						<td>
-							<div id="actinide">
+							<div class="actinide">
 								<p style="text-align: right">89</p>
 								<h3 style="text-align: center">Pu</h3>
 								<p style="text-align: left">227</p>
 							</div>
 						</td>
 						<td>
-							<div id="actinide">
+							<div class="actinide">
 								<p style="text-align: right">89</p>
 								<h3 style="text-align: center">Am</h3>
 								<p style="text-align: left">227</p>
 							</div>
 						</td>
 						<td>
-							<div id="actinide">
+							<div class="actinide">
 								<p style="text-align: right">89</p>
 								<h3 style="text-align: center">Cm</h3>
 								<p style="text-align: left">227</p>
 							</div>
 						</td>
 						<td>
-							<div id="actinide">
+							<div class="actinide">
 								<p style="text-align: right">89</p>
 								<h3 style="text-align: center">Bk</h3>
 								<p style="text-align: left">227</p>
 							</div>
 						</td>
 						<td>
-							<div id="actinide">
+							<div class="actinide">
 								<p style="text-align: right">89</p>
 								<h3 style="text-align: center">Cf</h3>
 								<p style="text-align: left">227</p>
 							</div>
 						</td>
 						<td>
-							<div id="actinide">
+							<div class="actinide">
 								<p style="text-align: right">89</p>
 								<h3 style="text-align: center">Es</h3>
 								<p style="text-align: left">227</p>
 							</div>
 						</td>
 						<td>
-							<div id="actinide">
+							<div class="actinide">
 								<p style="text-align: right">89</p>
 								<h3 style="text-align: center">Fm</h3>
 								<p style="text-align: left">227</p>
 							</div>
 						</td>
 						<td>
-							<div id="actinide">
+							<div class="actinide">
 								<p style="text-align: right">89</p>
 								<h3 style="text-align: center">Md</h3>
 								<p style="text-align: left">227</p>
 							</div>
 						</td>
 						<td>
-							<div id="actinide">
+							<div class="actinide">
 								<p style="text-align: right">89</p>
 								<h3 style="text-align: center">No</h3>
 								<p style="text-align: left">227</p>
 							</div>
 						</td>
 						<td>
-							<div id="actinide">
+							<div class="actinide">
 								<p style="text-align: right">89</p>
 								<h3 style="text-align: center">Lr</h3>
 								<p style="text-align: left">227</p>
