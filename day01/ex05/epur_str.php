@@ -4,6 +4,6 @@
 		$str = $argv[1];
 		trim($str);
 		$str = preg_replace('!\s+!', ' ', $str);
-		echo $str, "\n";
 	}
+	echo $str, "\n";
 ?>
