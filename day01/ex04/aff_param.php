@@ -1,5 +1,5 @@
 <?php
 	unset($argv[0]);
-	foreach($argv as $v)
-		echo $v, "\n";
+	foreach($argv as $var)
+		echo $var, "\n";
 ?>
