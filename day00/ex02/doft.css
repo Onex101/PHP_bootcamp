@@ -1,0 +1,112 @@
+header, .page, .left-column, .right-column{
+	border-radius: 10px;
+	background-color: #909090;
+	box-shadow: 10px 10px 10px black;
+}
+
+body{
+	background-color: #514F51;
+}
+
+header{
+	height: 140px;
+	width: 1420px;
+	position: relative;
+}
+
+.page{
+	margin: 20px 0 0 30px;
+	width: 1020px;
+	height: 580px;
+	float: left;
+	position: relative;
+}
+
+.green{
+	background-color: #88ff89;
+	font-family: arial;
+	width: 500px;
+	height: 150px;
+	padding: 10px;
+	top: 650px;
+	position: absolute;
+	border-radius: 10px;
+	box-shadow: 10px 10px 10px black;
+}
+
+form input[type="text"]{
+	width: 400px;
+	border-radius: 1px;
+}
+
+.left-column{
+	width: 108px;
+	height: 410px;
+	float: left;
+	margin: 20px 0 0 30px;
+	padding: 15px 0 0 32px;
+}
+
+.left-column>img{
+	width: 70px;
+	margin-bottom: 6px;
+}
+
+#look{
+	border: 3px solid red;
+	border-radius: 10px;
+}
+
+.right-column{
+	width: 130px;
+	height: 410px;
+	float: left;
+	margin: 20px 0 0 30px;
+}
+
+.right-column>img{
+	width: 70px;
+	margin: 15px 0 0 30px;
+	margin-bottom: 6px;
+}
+
+.wall{
+	background-image: url("resources/brick.jpg");
+	background-repeat: repeat;
+	height: 70px;
+	width: 120px;
+	margin: 15px 0 0 5px;
+	margin-bottom: 6px;
+}
+
+#cluster{
+	align-content: center;
+	margin: 10px;
+	width: 98%;
+	height: 98%;
+}
+
+#logo{
+	height: 110px;
+	margin: 10px 0 0 10px;
+}
+
+#search{
+	position: absolute;
+	top: 10px;
+	right: 30px;
+}
+
+#close{
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+}
+
+#reload{
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	height: 20px;
+	width: 20px;
+}

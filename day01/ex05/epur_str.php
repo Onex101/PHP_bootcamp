@@ -5,5 +5,5 @@
 		trim($str);
 		$str = preg_replace('!\s+!', ' ', $str);
 	}
-	echo $str, "\n";
+	echo ($str. "\n");
 ?>

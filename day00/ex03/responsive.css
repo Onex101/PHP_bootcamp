@@ -1,12 +1,12 @@
 body{
-	background-image: url('https://banner2.kisspng.com/20180425/wtq/kisspng-dmitri-mendeleev-scientist-dimitri-mendeleev-chemi-floating-elements-5ae057c1d58262.9283945415246519698745.jpg');
+	background-image: url('https://png2.kisspng.com/sh/33c8f40ba8e949113e7ffd7ea9858ed7/L0KzQYm3VMI2N5Jtj5H0aYP2gLBuTfRucaV3gZ92ZX7ndb3shgYue5RufdD9aYP3PbXwjfl1epoyhdd3ZHXvdbb9TfNpbZ5uRdh1b3H3ebBuTfVtbZ5qhuZ8LUXkdYG8VBMzOWI6fKU5Lke2QYK8UMQ1OWY3TKgAMUm6QIGAUcEveJ9s/kisspng-dmitri-mendeleev-scientist-dimitri-mendeleev-chemi-floating-elements-5ae057c2115d30.7311504415246519700711.png');
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-position: center; 
 }
 td {
 	flex: auto;
-	width: 5.55555%
+	/* width: 5.55555%; */
 }
 p{
 	font-size: 1vw;
