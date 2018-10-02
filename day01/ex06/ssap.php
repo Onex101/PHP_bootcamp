@@ -1,6 +1,7 @@
 <?php
 	function ft_split($str) 
 	{
+		trim($str);
 		$ret =	explode(" ", $str);
 		sort($ret);
 		return $ret;

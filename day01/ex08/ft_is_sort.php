@@ -10,6 +10,4 @@
 		}
 		return true;
 	}
-	$tab = array("hello", "this", "is", "a", "unsorted", "array");
-	$lnk = array("1", "2", "3", "4", "5", "6", "7", "8");
 ?>

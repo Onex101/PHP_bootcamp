@@ -11,4 +11,5 @@
 			echo "The number $line is odd\n";
 		echo "Enter a number: ";
 	}
+	echo "^D\n"
 ?>

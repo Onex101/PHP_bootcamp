@@ -8,21 +8,32 @@
 	$str = implode($argv, ' ');
 	$str = trim($str);
 	$str = preg_replace('/\s+/', ' ', $str);
-	echo $str. "\n";
-	$arr = explode($str, ' ');
-	$p = 0;
+	$arr = explode(' ', $str);
 	switch($arr[1])
 	{
 		case "+":
 			$p = $arr[0] + $arr[2];
 			break;
 		case "-":
-			$p = $arr[0] - $matches[2];
+			$p = $arr[0] - $arr[2];
 			break;
 		case "*":
 			$p = $arr[0] * $arr[2];
 			break;
 		case "/":
+			if ($arr[2] == 0)
+			{
+				echo "Division by zero";
+				break;
+			}
+			$p = $arr[0] / $arr[2];
+			break;
+		case "%":
+			if ($arr[2] == 0)
+			{
+				echo "Division by zero";
+				break;
+			}
 			$p = $arr[0] / $arr[2];
 			break;
 	}
