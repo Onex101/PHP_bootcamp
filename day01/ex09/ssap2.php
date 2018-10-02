@@ -1,3 +1,4 @@
+#!/usr/bin/php
 <?php
 	function ft_sort($arr)
 	{
@@ -5,14 +6,32 @@
 		$num = array();
 		$spc = array();
 		$i = -1;
+		$z = 0;
 		while (isset($arr[++$i]))
 		{
-			if (!is_numeric($arr[$i]) && !preg_match('/[\'^£$%&*()}{@#~?><>,|=_+¬-]/', $arr[$i]))
-				array_push($alpha, $arr[$i]);
+			if (!is_numeric($arr[$i]) && !preg_match('/[\'^£$%&*()}{@#~?><>,|=_+¬:-]/', $arr[$i]))
+			{
+				$str = $arr[$i];
+				if (is_numeric(substr($str, 0, 1)))
+				{
+					$digit = (float)$arr[$i];
+					array_push($num, $digit);
+				}
+				else
+					array_push($alpha, $arr[$i]);
+			}
 			else if (is_numeric($arr[$i]))
-				array_push($num, $arr[$i]);
+			{
+				$digit = (float)$arr[$i];
+				array_push($num, $digit);
+			}
 			else if (preg_match('/[\'^£$%&*()}{@#~?><>,|=_+¬-]/', $arr[$i]))
-				array_push($spc, $arr[$i]);
+			{
+				// if (!preg_match("/^[a-z]$/i", $arr[$i][0])) 
+				// 	array_push($alpha, $arr[$i]);
+				// else
+					array_push($spc, $arr[$i]);
+			}
 		}
 		natcasesort($alpha);
 		natcasesort($num);
