@@ -1,56 +1,52 @@
 #!/usr/bin/php
 <?php
-	function ft_sort($arr)
+	function is_sort($a, $b)
 	{
-		$alpha = array();
-		$num = array();
-		$spc = array();
-		$i = -1;
-		$z = 0;
-		while (isset($arr[++$i]))
+		$a = strtolower($a);
+		$b = strtolower($b);
+		$arr = array('a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9');
+		$length = min(strlen($a), strlen($b));
+		for ($i = 0; $i < $length; $i++)
 		{
-			if (!is_numeric($arr[$i]) && !preg_match('/[\'^£$%&*()}{@#~?><>,|=_+¬:-]/', $arr[$i]))
-			{
-				$str = $arr[$i];
-				if (is_numeric(substr($str, 0, 1)))
-				{
-					$digit = (float)$arr[$i];
-					array_push($num, $digit);
-				}
-				else
-					array_push($alpha, $arr[$i]);
-			}
-			else if (is_numeric($arr[$i]))
-			{
-				$digit = (float)$arr[$i];
-				array_push($num, $digit);
-			}
-			else if (preg_match('/[\'^£$%&*()}{@#~?><>,|=_+¬-]/', $arr[$i]))
-			{
-				// if (!preg_match("/^[a-z]$/i", $arr[$i][0])) 
-				// 	array_push($alpha, $arr[$i]);
-				// else
-					array_push($spc, $arr[$i]);
-			}
+			$aa = substr($a, $i, 1);
+			$bb = substr($b, $i, 1);
+			$ia = array_search($aa, $arr);
+			$ib = array_search($bb, $arr);
+			if ($ia === false)
+				$ia = ord($aa) + 100;
+			if ($ib === false)
+				$ib = ord($bb) + 100;
+			if ($ib < $ia)
+				return false;
+			if ($ib > $ia)
+				return true;
 		}
-		natcasesort($alpha);
-		natcasesort($num);
-		natcasesort($spc);
-		$tmp = array_merge($alpha, $num);
-		$tmp = array_merge($tmp, $spc);
-		return $tmp;
+		if (strlen($a) <= strlen($b))
+			return true;
+		else
+			return false;
 	}
+	$array = array();
 	unset($argv[0]);
-	if (isset($argv))
+	foreach($argv as $v)
 	{
-		$str = implode($argv, ' ');
-		$str = trim($str);
-		$str =  preg_replace('!\s+!', ' ', $str);
-		$arr = explode(" ", $str);
-		$arr = ft_sort($arr);
-		foreach ($arr as $var)
-			echo $var. "\n";
+		$tmp = explode(" ", $v);
+		foreach ($tmp as $v2)
+			if ($v2)
+				$array[] = $v2;
 	}
-	else
-		echo ("\n");
+	for ($i = 0; $i < count($array) - 1;)
+	{
+		if (is_sort($array[$i], $array[$i + 1]))
+			$i++;
+		else 
+		{
+			$temp = $array[$i];
+			$array[$i] = $array[$i + 1];
+			$array[$i + 1] = $temp;
+			$i = 0;
+		}
+	}
+	foreach ($array as $v)
+		echo $v."\n";
 ?>
