@@ -1,3 +1,4 @@
+#!/usr/bin/php
 <?php
 	echo "Enter a number: ";
 	while ($line = fgets(STDIN))
