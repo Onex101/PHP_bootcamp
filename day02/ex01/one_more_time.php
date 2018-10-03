@@ -23,7 +23,7 @@
 				if (strlen($arr[3]) == 4 && is_numeric($arr[3]) && $arr[3] > 1969)
 				{
 					echo $arr[4];
-					if (isValidTime($arr[4]))
+					if (DateTime::createFromFormat('h:m:s',  $arr[4]))
 					{
 						$str = $arr[3]."-".$str."-".$arr[1]." ".$arr[4];
 						echo $str;
