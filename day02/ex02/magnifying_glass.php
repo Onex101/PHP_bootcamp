@@ -1,42 +1,23 @@
 #!/usr/bin/php
 <?php
-if (isset($argv[1]))
-{
+	$fd = fopen($argv[1], "r");
+	$file = fread($fd, filesize($argv[1]));
+	$doc = new DOMDocument();
+	$doc->loadHTML($file, LIBXML_HTML_NOIMPLIED | LIBXML_HTML_NODEFDTD);
 	$i = -1;
-	$content = file_get_contents($argv[1]);
+	$links = $doc->getElementsByTagName('a');
+	
+	foreach($links as $node)
 	{
-		while (++$i < strlen($content))
+		if ($node->hasAttribute('title'))
+			$node->setAttribute('title', strtoupper($node->getAttribute('title')));
+		foreach($node->childNodes as $child)
 		{
-			echo $i."\n";
-			if ($i = strpos($content, "title=", $i))
-			{
-				while ($content[$i] !== "\"")
-					$i++;
-				while ($content[++$i] !== "\"")
-				{
-					$content[$i] = strtoupper($content[$i]);
-				}
-			}
-			else
-				break ;
-		}
-		$i = -1;
-		while (++$i < strlen($content))
-		{
-			if($i = strpos($content, "<a", $i))
-			{
-				while ($content[$i] !== ">")
-					$i++;
-				while ($content[++$i] !== "<")
-				{
-					$content[$i] = strtoupper($content[$i]);
-					echo $content[$i]."\n";
-				}
-			}
-			else
-				break ;
+			if ($child->nodeType != 3)
+				if ($child->hasAttribute('title'))
+					$child->setAttribute('title', strtoupper($child->getAttribute('title')));
+			$child->nodeValue = strtoupper($child->nodeValue);
 		}
 	}
-	echo $content;
-}
+	echo $doc->saveHTML();
 ?>
